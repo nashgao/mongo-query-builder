@@ -1,0 +1,10 @@
+{
+    "name": "nash/mongo-query-builder",
+    "authors": [
+        {
+            "name": "nashgao",
+            "email": "nashgao1992@gmail.com"
+        }
+    ],
+    "require": {}
+}
