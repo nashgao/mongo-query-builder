@@ -21,7 +21,9 @@
         "phpstan/phpstan": "^0.12"
     },
     "autoload": {
-        "Nashgao\\Mongo\\QueryBuilder": "src"
+        "psr-4": {
+            "Nashgao\\Mongo\\QueryBuilder": "src"
+        }
     },
     "autoload-dev": {
         "psr-4": {
