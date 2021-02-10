@@ -1,10 +1,39 @@
 {
-    "name": "nash/mongo-query-builder",
+    "name": "nashgao/mongo-query-builder",
+    "type": "library",
+    "license": "MIT",
+    "description": "self used mongo encapsulation for hyperf framework",
     "authors": [
         {
             "name": "nashgao",
             "email": "nashgao1992@gmail.com"
         }
     ],
-    "require": {}
+    "require": {
+        "hyperf/di": "~2.1.0",
+        "hyperf/gotask": "~2.2.0"
+    },
+    "require-dev": {
+        "hyperf/testing": "~2.1.0",
+        "swoole/ide-helper": "~4.6",
+        "friendsofphp/php-cs-fixer": "^2.14",
+        "mockery/mockery": "^1.0",
+        "phpstan/phpstan": "^0.12"
+    },
+    "autoload": {
+        "Nashgao\\Mongo\\QueryBuilder": "src"
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Nashgao\\Test\\": "./test"
+        }
+    },
+    "scripts": {
+        "test": "./vendor/bin/co-phpunit --colors=always",
+        "test-coverage": "phpunit --colors=always --coverage-clover clover.xml",
+        "license-check": "docheader check src/ tests/",
+        "cs-fix": "php-cs-fixer fix $1",
+        "json-fix": "./bin/composer-json-fixer",
+        "analyse": "phpstan analyse --memory-limit 4096M -l 5 -c phpstan.neon"
+    }
 }
