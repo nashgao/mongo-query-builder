@@ -22,7 +22,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Nashgao\\Mongo\\QueryBuilder": "src"
+            "Nashgao\\Mongo\\QueryBuilder\\": "src"
         }
     },
     "autoload-dev": {

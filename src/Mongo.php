@@ -3,7 +3,7 @@
 declare(strict_types=1);
 
 
-namespace App\Mongo;
+namespace Nashgao\Mongo\QueryBuilder;
 
 use Hyperf\GoTask\MongoClient\Collection;
 use Hyperf\GoTask\MongoClient\MongoClient;
