@@ -18,11 +18,11 @@ use Nashgao\Mongo\QueryBuilder\Annotation\UpdateResultAnnotation;
 
 class MongoDao
 {
-    protected Mongo $model;
+    protected MongoModel $model;
 
     protected Collection $collection;
 
-    public function __construct(Mongo $model)
+    public function __construct(MongoModel $model)
     {
         $this->model = $model;
         $this->collection = $this->model->{$this->model->getDatabaseName()}->{$this->model->getCollectionName()};
@@ -124,7 +124,7 @@ class MongoDao
         return $this->collection->createIndex($columns);
     }
 
-    public function getModel(): Mongo
+    public function getModel(): MongoModel
     {
         return $this->model;
     }

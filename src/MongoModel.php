@@ -8,7 +8,7 @@ namespace Nashgao\Mongo\QueryBuilder;
 use Hyperf\GoTask\MongoClient\Collection;
 use Hyperf\GoTask\MongoClient\MongoClient;
 
-class Mongo extends MongoClient
+class MongoModel extends MongoClient
 {
     protected string $database;
     protected string $collection;
